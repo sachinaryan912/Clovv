@@ -1,0 +1,122 @@
+{
+  "project_info": {
+    "project_number": "228351210091",
+    "firebase_url": "https://clovv-e763d-default-rtdb.firebaseio.com",
+    "project_id": "clovv-e763d",
+    "storage_bucket": "clovv-e763d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228351210091:android:000e5b79b1b6d4c222b72e",
+        "android_client_info": {
+          "package_name": "com.company.clovv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228351210091-nqh3es7107ugbhu9knhg1q5h1nnsgogk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.clovv",
+            "certificate_hash": "9ec329b94d3be1b4e26d2c46b9b45023433a058e"
+          }
+        },
+        {
+          "client_id": "228351210091-om7f9q9k4par5udg46ipiupcljhf7b1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjiTNz06ykX55SgOSqFjtduloqPNF6PNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228351210091-om7f9q9k4par5udg46ipiupcljhf7b1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228351210091:android:6491c84ecdcd7dad22b72e",
+        "android_client_info": {
+          "package_name": "com.company.clovvforbusiness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228351210091-p14c9gkpttn7gnhmmuusn0re8tt9enkt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.clovvforbusiness",
+            "certificate_hash": "9ec329b94d3be1b4e26d2c46b9b45023433a058e"
+          }
+        },
+        {
+          "client_id": "228351210091-om7f9q9k4par5udg46ipiupcljhf7b1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjiTNz06ykX55SgOSqFjtduloqPNF6PNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228351210091-om7f9q9k4par5udg46ipiupcljhf7b1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228351210091:android:d7e0d47bb2070e5322b72e",
+        "android_client_info": {
+          "package_name": "com.company.clovvfordealer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228351210091-di06tv6pkg31p3nhrdtqaneeobo2gkt5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.clovvfordealer",
+            "certificate_hash": "9ec329b94d3be1b4e26d2c46b9b45023433a058e"
+          }
+        },
+        {
+          "client_id": "228351210091-om7f9q9k4par5udg46ipiupcljhf7b1g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjiTNz06ykX55SgOSqFjtduloqPNF6PNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228351210091-om7f9q9k4par5udg46ipiupcljhf7b1g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
