@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Clovv</string>
+
+
+    <string name="google_api_key_map">AIzaSyA64wO92CKVG91JRbYzwCoaaSAxrDMsCac</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="price">$ 60.0</string>
+    <string name="distance">2 km</string>
+    <string name="dot">.</string>
+    <string name="time">12 min</string>
+
+    <string name="rs">\u20B9</string>
+    <string name="otpHint">We have sent verification code to +00 00000 00000</string>
+    <string name="loginWarn">Please login to proceed further</string>
+    <string name="signoutWarn">Are you sure want to logout?</string>
+    <string name="itemexistWarn">Delete previous cart items and add new ?</string>
+    <string name="cancelOrderWarn">Are you sure want to cancel order ?</string>
+
+    <string name="quote1">Thanks for choosing us! now we are family &#128522;</string>
+    <string name="quote2">Kindly rate us! &#128522;</string>
+
+    <string-array name="weight_type">
+
+        <item>KG</item>
+        <item>gram</item>
+        <item>L</item>
+        <item>ml</item>
+
+    </string-array>
+
+    <string-array name="shop_filter">
+
+        <item>All</item>
+        <item>Dairy</item>
+        <item>Mill</item>
+        <item>Kirana</item>
+
+    </string-array>
+
+
+    <string-array name="weight_type_l">
+
+
+        <item>L</item>
+        <item>ml</item>
+
+    </string-array>
+
+    <string-array name="weight_type_kg">
+
+        <item>KG</item>
+        <item>gram</item>
+
+    </string-array>
+
+    <string-array name="weight_type_l_reverse">
+
+
+        <item>ml</item>
+        <item>L</item>
+
+    </string-array>
+
+    <string-array name="weight_type_kg_reverse">
+
+
+        <item>gram</item>
+        <item>KG</item>
+
+    </string-array>
+
+
+</resources>
