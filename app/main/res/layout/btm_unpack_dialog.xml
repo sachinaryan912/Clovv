@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:background="@drawable/btm_design_bg"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lay65"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/product_name_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Garam MASALA"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/product_desc_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="very good product "
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="#ececec"/>
+
+        <TextView
+            android:id="@+id/product_price_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 60.0"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="#00C853"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lay65"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Enter  Product Quantity"
+        android:textColor="#c4c4c4"
+        android:textSize="17dp" />
+
+    <LinearLayout
+        android:id="@+id/quantity_select"
+        android:layout_below="@id/txt"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/edt_wt_val"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/edt_bg_card"
+            android:gravity="center"
+            android:hint="000"
+            android:inputType="number"
+            android:singleLine="true"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Spinner
+            android:id="@+id/spinner_wt_dialog"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/edt_bg_card"
+            android:gravity="center"
+            android:textAlignment="center"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_below="@id/quantity_select"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_main"
+        android:fontFamily="@font/nunito_sans"
+        android:text="Add to Cart"
+        android:layout_marginBottom="10dp"
+        android:outlineSpotShadowColor="@color/purple_700"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

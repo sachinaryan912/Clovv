@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FavActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/purple_700"
+            app:title="Favourites"
+            app:titleTextColor="@color/white" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_lay_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tool_bar"
+            android:hapticFeedbackEnabled="true"
+            app:tabBackground="@color/purple_700"
+            app:tabIndicatorColor="@color/white"
+            app:tabSelectedTextColor="@color/white"
+            app:tabTextColor="#E8E8E8">
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textAlignment="center" />
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shops"
+                android:textAlignment="center" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager1"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tab_lay_order" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

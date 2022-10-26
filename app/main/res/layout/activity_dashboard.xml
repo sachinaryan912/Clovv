@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Dashboard">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center"
+        android:id="@+id/blocked_lay">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/img"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_remove_circle_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ACCOUNT \n TEMPORARY BLOCKED"
+            android:layout_below="@id/img"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#ff0000"
+            android:textSize="23dp"
+            android:id="@+id/headTxt"
+            android:fontFamily="@font/aleo_bold_italic"/>
+
+        <TextView
+            android:id="@+id/messageTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hey"
+            android:layout_below="@id/headTxt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#c4c4c4"
+            android:textSize="18dp"
+            android:fontFamily="@font/nunito_sans"/>
+
+        <Button
+            android:id="@+id/contact_us"
+            android:layout_width="200dp"
+            android:layout_height="?actionBarSize"
+            android:text="Contact us"
+            android:textColor="@color/purple_700"
+            android:layout_below="@id/messageTxt"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_outlined"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:id="@+id/no_internet_lay">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:lottie_rawRes="@raw/no_internet"
+            android:id="@+id/lot_no_internet"/>
+
+        <Button
+            android:id="@+id/retry_btn"
+            android:layout_width="200dp"
+            android:layout_height="?actionBarSize"
+            android:text="Retry"
+            android:textColor="@color/purple_700"
+            android:layout_marginBottom="240dp"
+            android:background="@drawable/btn_outlined"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/main_lay"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_nav"
+            android:id="@+id/frame_lay"/>
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btm_design_bg"
+            android:elevation="50dp"
+            android:outlineAmbientShadowColor="@color/purple_700"
+            android:outlineSpotShadowColor="@color/purple_700"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_menu" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

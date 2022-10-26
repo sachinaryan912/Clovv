@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/lay_one"
+            android:id="@+id/view_pager1"/>
+
+
+    <LinearLayout
+        android:id="@+id/lay_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/card_bg"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+        <me.relex.circleindicator.CircleIndicator
+            android:id="@+id/indicator"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="15dp"
+            android:paddingBottom="15dp"
+            app:ci_drawable="@drawable/selected_circle_ic"
+            app:ci_drawable_unselected="@drawable/circle1_ic"
+            app:ci_height="5dp"
+            app:ci_width="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Ready \nto order masala ? "
+            android:textColor="#000"
+            android:textSize="23dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Order from nearby shops"
+            android:textColor="#c4c4c4"
+            android:textSize="14dp" />
+
+        <Button
+            android:id="@+id/set_delivery_location"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_main"
+            android:elevation="10dp"
+            android:fontFamily="@font/nunito_sans"
+            android:outlineSpotShadowColor="@color/purple_700"
+            android:text="Set delivery location"
+            android:textColor="@color/white" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

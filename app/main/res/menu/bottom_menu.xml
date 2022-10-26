@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item app:showAsAction="never"
+        android:id="@+id/dash_board"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="CLOVV"/>
+
+    <item app:showAsAction="never"
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Cart"/>
+
+
+
+    <item app:showAsAction="never"
+        android:id="@+id/history"
+        android:icon="@drawable/ic_baseline_history_24"
+        android:title="Order History"/>
+
+
+
+    <item app:showAsAction="never"
+        android:id="@+id/sett"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting"/>
+
+
+<!--    <item app:showAsAction="never"-->
+<!--        android:id="@+id/qr_btn"-->
+<!--        android:icon="@drawable/ic_baseline_qr_code_24"-->
+<!--        android:title="My QR Code"/>-->
+
+</menu>

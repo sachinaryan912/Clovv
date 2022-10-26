@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_gravity="center"
+    android:background="@drawable/card_bg"
+
+    android:layout_height="360dp">
+
+    <ImageView
+        android:id="@+id/close_btn_filter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24"
+        android:layout_marginTop="25dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort by"
+            android:fontFamily="@font/nunito_sans"
+            android:textSize="23dp"
+            android:textColor="@color/gray2"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@null"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"
+            android:text="Order Cancelled"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"
+            android:text="Order Success"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"
+            android:text="Out for delivery"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"
+            android:text="Order Expired"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@null"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/black"
+            android:text="Order Pending"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

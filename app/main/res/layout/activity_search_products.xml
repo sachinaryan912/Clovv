@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".SearchProducts">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/border_edt_card"
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <EditText
+            android:id="@+id/search_text"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@id/btn_back"
+            android:background="@color/white"
+            android:hint="Search products"
+            android:inputType="textAutoComplete"
+            android:paddingLeft="20dp"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/rec_search_product"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/rec_search_shop"/>
+
+</LinearLayout>

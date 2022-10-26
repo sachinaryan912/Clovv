@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GetAddressActivity">
+
+    <fragment
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_above="@id/lay_one"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/current_btn_location"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/lay_one"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/oval_card"
+        android:elevation="10dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_my_location_24"
+            app:tint="@color/purple_700" />
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/search_location"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/card_bg"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:drawablePadding="20dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/nunito_sans"
+        android:hint="Enter Address,City or Zip Code"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textSize="14dp" />
+
+
+    <LinearLayout
+        android:id="@+id/lay_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/card_bg"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:paddingBottom="30dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="SELECT DELIVERY LOCATION "
+            android:layout_marginLeft="30dp"
+            android:textColor="#c4c4c4"
+            android:textSize="14dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    app:tint="@color/purple_700" />
+
+                <TextView
+                    android:id="@+id/locality_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/nunito_sans"
+                    android:text="Location "
+
+                    android:textColor="#000"
+                    android:textStyle="bold"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/add_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/nunito_sans"
+            android:text="area,country,street "
+            android:layout_marginLeft="65dp"
+            android:textColor="#c4c4c4"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/set_delivery_location"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_main"
+            android:elevation="10dp"
+            android:fontFamily="@font/nunito_sans"
+            android:outlineSpotShadowColor="@color/purple_700"
+            android:text="Confirm location"
+            android:textColor="@color/white" />
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

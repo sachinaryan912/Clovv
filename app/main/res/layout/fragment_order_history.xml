@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFDF9"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.OrderHistoryFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:progressTint="@color/purple_700"
+            android:backgroundTint="@color/purple_700"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:cardBackgroundColor="@color/purple_700">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="Order History"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/filterBtn"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        app:lottie_rawRes="@raw/filter_new" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recViewCustomerHistory"/>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

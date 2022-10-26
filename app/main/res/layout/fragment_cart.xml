@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment.CartFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+       <LinearLayout
+           android:visibility="gone"
+           android:id="@+id/emp_lay_cart"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           android:gravity="center"
+           android:layout_centerInParent="true">
+
+           <ImageView
+               android:id="@+id/img"
+               android:layout_width="100dp"
+               android:layout_height="100dp"
+               android:src="@drawable/ic_baseline_shopping_cart_24"
+               app:tint="#ececec" />
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="No item in cart"
+               android:textSize="20dp"
+               android:layout_centerHorizontal="true"
+               android:layout_marginTop="10dp"
+               android:textColor="#ececec"/>
+
+           <Button
+               android:id="@+id/btnStartShopping"
+               android:layout_width="match_parent"
+               android:layout_height="?actionBarSize"
+               android:layout_marginLeft="30dp"
+               android:layout_marginRight="30dp"
+               android:layout_marginTop="20dp"
+               android:background="@drawable/btn_main"
+               android:outlineSpotShadowColor="@color/purple_700"
+               android:text="Start Shopping"
+               android:textColor="@color/white"
+               android:fontFamily="@font/nunito_sans"/>
+
+
+       </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/lay_items_in_cart">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:cardBackgroundColor="@color/purple_700">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:layout_marginLeft="30dp"
+                    android:text="Cart"
+                    android:fontFamily="@font/nunito_sans"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+
+            </androidx.cardview.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_below="@id/card1"
+                android:layout_above="@id/btm_data_card"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:id="@+id/card2"
+                        android:elevation="0dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:id="@+id/shopName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="10dp"
+                                android:fontFamily="@font/nunito_sans"
+                                android:text="shopName"
+                                android:textColor="@color/black"
+                                android:textSize="19dp"
+                                android:textStyle="bold" />
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rec_cart_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/shopName"
+                                android:layout_marginLeft="8dp" />
+
+                        </RelativeLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card3"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/card2"
+                        android:layout_marginTop="10dp"
+                        android:elevation="0dp"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="30dp"
+                            android:fontFamily="@font/nunito_sans"
+                            android:text="+ Add more items"
+                            android:textColor="@color/purple_700"
+                            android:textSize="15dp" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_below="@id/card3"
+                        android:id="@+id/card4"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans"
+                                android:text="Subtotal : 000"
+                                android:layout_gravity="end"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:textColor="#656565"
+                                android:id="@+id/subTotal"
+                                android:layout_marginRight="30dp"/>
+
+
+                            <TextView
+                                android:id="@+id/deliveryChargeTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans"
+                                android:text="Delivery charges (>2km): \u20B9 20.00"
+                                android:layout_gravity="end"
+                                android:textSize="15dp"
+                                android:textColor="@color/gray2"
+                                android:layout_marginRight="30dp"/>
+
+
+
+                            <TextView
+                                android:id="@+id/totalPrice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/nunito_sans"
+                                android:text="Total : \u20B9 56.78"
+                                android:layout_gravity="end"
+                                android:textSize="18dp"
+                                android:layout_marginTop="8dp"
+                                android:textStyle="bold"
+                                android:textColor="#00C853"
+                                android:layout_marginRight="30dp"/>
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_below="@id/card4"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Delivery address"
+                                android:textSize="15dp"
+
+                                android:fontFamily="@font/nunito_sans"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:weightSum="3">
+
+                                <TextView
+                                    android:id="@+id/delivery_location_cart"
+                                    android:layout_width="120dp"
+                                    android:layout_height="wrap_content"
+                                    android:text="Delivery location default"
+                                    android:textSize="12dp"
+                                    android:layout_weight="2"
+                                    android:textColor="@color/black"
+                                    android:fontFamily="@font/nunito_sans"/>
+                                <TextView
+                                    android:id="@+id/change_location"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Change"
+                                    android:textSize="14dp"
+                                    android:layout_gravity="end"
+                                    android:gravity="end"
+                                    android:layout_weight="1"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/purple_700"
+                                    android:fontFamily="@font/nunito_sans"/>
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/distData"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0 km"
+                                android:textSize="11dp"
+                                android:padding="6dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/edt_bg_card"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/nunito_sans"/>
+
+
+
+
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="125dp"
+                        android:background="@color/white"
+                        android:layout_below="@id/card5"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mode of Payment"
+                                android:textSize="15dp"
+                                android:fontFamily="@font/nunito_sans"/>
+
+                            <RadioGroup
+                                android:id="@+id/radio"
+                                android:layout_marginTop="10dp"
+                                android:layout_width="match_parent"
+                                android:orientation="vertical"
+                                android:weightSum="2"
+                                android:layout_height="wrap_content" >
+
+
+
+                                <RadioButton
+                                    android:layout_weight="1"
+                                    android:id="@+id/radioOnline"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/purple_700"
+                                    android:layout_marginBottom="15dp"
+                                    android:text="Online Payment" />
+
+                                <RadioButton
+                                    android:layout_weight="1"
+                                    android:id="@+id/radioCash"
+                                    android:layout_width="wrap_content"
+                                    android:fontFamily="@font/nunito_sans"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/purple_700"
+                                    android:text="Cash On Delivery" />
+
+                            </RadioGroup>
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+
+            </ScrollView>
+
+
+            <LinearLayout
+                android:id="@+id/btm_data_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/card_bg"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:outlineSpotShadowColor="#FFF6E6"
+                android:paddingLeft="20dp"
+                android:paddingTop="25dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="25dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/size_list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="2"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/totalPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/nunito_sans"
+                        android:gravity="end"
+                        android:text="Total : \u20B9 56.78"
+                        android:textColor="#00C853"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/checkout_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/btn_main"
+                    android:fontFamily="@font/nunito_sans"
+                    android:outlineSpotShadowColor="@color/purple_700"
+                    android:text="Proceed to checkout"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</FrameLayout>

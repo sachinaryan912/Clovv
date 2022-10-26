@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBFAF7"
+    android:orientation="vertical"
+    tools:context=".HistoryOrderDetails">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        app:cardBackgroundColor="@color/purple_700">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imge_status"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/orderStatustxtData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Status"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/aleo_bold"
+                    android:textColor="@color/white"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/orderIdtxtData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Order id #clovvdsldd23"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/backBtnHistory"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:tint="@color/white" />
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardOrderDetails"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order Details"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/gray2"/>
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="30dp"
+                    android:id="@+id/collapseIcon"
+                    app:lottie_rawRes="@raw/collapse"/>
+
+            </RelativeLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/orderdetailsList"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/loginWarn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/loginWarn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/loginWarn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/loginWarn"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginBottom="30dp"
+                    android:text="@string/loginWarn"/>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp">
+
+        <LinearLayout
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Tracking"
+                android:textSize="16dp"
+                android:fontFamily="@font/nunito_sans"
+                android:textColor="@color/gray2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/circle1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <View
+                        android:id="@+id/viewLine1"
+                        android:layout_width="3dp"
+                        android:layout_height="20dp"
+                        android:background="@color/greyline"/>
+
+                    <ImageView
+                        android:id="@+id/circle2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <View
+                        android:id="@+id/viewLine2"
+                        android:layout_width="3dp"
+                        android:layout_height="20dp"
+                        android:background="@color/greyline"/>
+
+                    <ImageView
+                        android:id="@+id/circle3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+                    <View
+                        android:id="@+id/viewLine3"
+                        android:layout_width="3dp"
+                        android:layout_height="20dp"
+                        android:background="@color/greyline"/>
+
+                    <ImageView
+                        android:id="@+id/circle4"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+
+
+
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/step1Txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ordered"
+                        android:fontFamily="@font/nunito_sans"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/step2Txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Accepted"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/step3Txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Out for delivery"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:textColor="@color/black"/>
+
+                    <TextView
+                        android:id="@+id/step4Txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order success"
+                        android:layout_marginTop="26dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:textColor="@color/black"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
