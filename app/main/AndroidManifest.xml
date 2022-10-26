@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.company.clovv">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Clovv">
+        <activity
+            android:name=".GetAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddressBookActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Clovv2" />
+        <activity
+            android:name=".FavActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Clovv2" />
+        <activity
+            android:name=".HistoryOrderDetails"
+            android:exported="false"
+            android:theme="@style/Theme.Clovv2" />
+        <activity
+            android:name=".PaymentPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderPlacedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UsernameActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Clovv3" />
+        <activity
+            android:name=".OtpPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchProducts"
+            android:exported="false"
+            android:theme="@style/Theme.Clovv1" />
+        <activity
+            android:name=".ShopProductsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Clovv1" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false"
+            android:theme="@style/Theme.Clovv1" />
+        <activity
+            android:name=".GetLocationActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="@string/google_api_key_map" />
+    </application>
+
+</manifest>
